@@ -1,134 +1,302 @@
 <extends src='layout.html'>
   <block name='content'>
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div style="background:white;padding:20px;">
 
-        <a href="/manage-organizations">
-          Manage All Organizations
-        </a>
-
-        <h1 style="margin-bottom:0px;">
-          Sam's Health Care (1) <i class="fas fa-check-circle" style="color: LimeGreen;"></i>
-        </h1>
+      <a href="/manage-organizations">
+        Manage All Organizations
+      </a>
 
 
-        <div class="row">
-          <div class="col-sm-12">
-            <div>
-              <a href="https://www.vivacare.com/sullmanchange" target="_blank">sullmanchange</a>
-            </div>
 
-            <div>
-              <a href="https://www.samullman.co/" target="_blank">https://www.samullman.co/</a>
-            </div>
-            <div>
-              <i class="far fa-edit" style="cursor:pointer;margin-right:2px;"></i>
-            </div>
+      <div class="row">
+        <div class="col-sm-12">
 
-          </div>
-        </div>
+          <h1 style="margin-bottom:0px;">
 
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <img src="https://res.cloudinary.com/vivacare/image/upload/v1550865483/samples/food/spices.jpg"
-              style="width:100%;max-width:125px;margin-right: 5px;" />
-            <input type="file" name="file">
-          </div>
+              <a href="#">
+                <i class="far fa-edit" style="cursor:pointer;font-size:14px;"></i>
+              </a>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
+            Sam's Health Care (1)
+            <i class="fas fa-check-circle" style="color: LimeGreen;"></i>
+            
+          </h1>
 
-          </div>
-        </div>
-
-        <div>
           <div>
-            <h3 style="margin-top: 20px">
-              Specialties
-            </h3>
+            <b>Subdomain:</b> <a href="https://www.vivacare.com/sullmanchange" target="_blank">sullmanchange</a>
+          </div>
 
-            <div style="margin: 2.5px 0px;">
-              Dermatolgoy <i class="fas fa-times" style="cursor:pointer;color:darkgray;"></i>, Cardiology <i
-                class="fas fa-times" style="cursor:pointer;color:darkgray;"></i>
-            </div>
+          <div>
+            <b>External address:</b> <a href="https://www.samullman.co/" target="_blank">https://www.samullman.co/</a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
+            Logo
+          </h3>
+
+          <img src="https://res.cloudinary.com/vivacare/image/upload/v1550865483/samples/food/spices.jpg"
+            style="width:100%;max-width:125px;margin-right: 5px;margin-bottom:5px;" />
+          <input type="file" name="file">
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
 
             <a href="#">
-              Add an existing specialty
+              <i class="far fa-edit" style="cursor:pointer;font-size: 14px;"></i>
             </a>
+            About
+
+            
+          </h3>
+
+          <div class="form-group" style="margin-bottom:0px;">
+            <textarea class="form-control" rows="3"></textarea>
           </div>
 
-          <div>
-            <h3 style="margin-top: 20px">
-              CMS
-            </h3>
-
-            <div style="margin: 2.5px 0px;">
-              <div>
-                <b>Title</b> Sam Ullman
-              </div>
-
-              <div>
-                <b>Dowload app</b> <i class="fas fa-check" style="color:#767676;"></i>
-              </div>
-
-              <div>
-                <b>Organization Name on Library</b> <i class="fas fa-check" style="color:#767676;"></i>
-              </div>
-              <div>
-                <b>About Us</b> <i class="fas fa-check" style="color:#767676;"></i>
-              </div>
-              <div>
-                <b>Website Url</b> <i class="fas fa-check" style="color:#767676;"></i>
-              </div>
-            </div>
-
-            <div class="">
-              <i class="far fa-edit" style="cursor:pointer;"></i>
-            </div>
-          </div>
-
-          <div>
-            <h3 style="margin-top: 20px">
-              Mobile App Codes
-            </h3>
-
-            <div style="margin: 2.5px 0px;">
-              sullmanchange <i class="fas fa-times" style="cursor:pointer;color:darkgray;"></i>
-            </div>
-
-            <a href="#">
-              Add a new code
-            </a>
-          </div>
-
-          <div>
-
-            <h3 style="margin-top: 20px">
-              CMS Templates
-            </h3>
-
-            <div style="margin: 2.5px 0px;">
-              Dermatology <i class="fas fa-times" style="cursor:pointer;color:darkgray;"></i>,
-              Cardiology <i class="fas fa-times" style="cursor:pointer;color:darkgray;"></i>,
-            </div>
-
-            <a href="#">
-              Add an existing template
-            </a>
-          </div>
-        </div>
-
-        <h3 style="margin-top: 20px">
-          Profiles
-        </h3>
-
-        <div style="margin: 2.5px 0px;">
 
         </div>
 
-        <a href="#">
-          Add an existing template
-        </a>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
+            Specialties
+          </h3>
 
+          <div style="margin: 2.5px 0px;">
+            Dermatolgoy <i class="fas fa-times" style="cursor:pointer;color:#767676;"></i>, Cardiology <i
+              class="fas fa-times" style="cursor:pointer;color:#767676;"></i>
+          </div>
+
+          <a href="#">
+            Add an existing specialty
+          </a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
+            <a href="#">
+              <i class="far fa-edit" style="cursor:pointer;font-size: 14px;"></i>
+            </a>
+
+            CMS
+          </h3>
+
+          <div>
+            <b>Title</b> Sam Ullman
+          </div>
+
+          <div>
+            <b>Dowload app</b> <i class="fas fa-check" style="color:#767676;"></i>
+          </div>
+
+          <div>
+            <b>Organization Name on Library</b> <i class="fas fa-check" style="color:#767676;"></i>
+          </div>
+          <div>
+            <b>About Us</b> <i class="fas fa-check" style="color:#767676;"></i>
+          </div>
+          <div>
+            <b>Website Url</b> <i class="fas fa-check" style="color:#767676;"></i>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
+            Mobile App Codes
+          </h3>
+
+          <div style="margin: 2.5px 0px;">
+            sullmanchange <i class="fas fa-times" style="cursor:pointer;color:#767676;"></i>
+          </div>
+
+          <a href="#">
+            Add a new code
+          </a>
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+
+          <h3 style="margin-top: 20px;border-bottom:2px solid #3d3d3d;padding-bottom:3px;">
+            CMS Templates
+          </h3>
+
+          <div style="margin: 2.5px 0px;">
+            Dermatology <i class="fas fa-times" style="cursor:pointer;color:#767676;"></i>,
+            Cardiology <i class="fas fa-times" style="cursor:pointer;color:#767676;"></i>,
+          </div>
+
+          <a href="#">
+            Add an existing template
+          </a>
+        </div>
+
+        <div class="col-sm-12">
+          <h3 style="margin-top: 20px;padding-bottom:3px;margin-bottom:0px;">
+            Profiles
+          </h3>
+
+          <table class="table" style="border-top:2px solid #3d3d3d">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">
+                  Photo
+                </th>
+                <th scope="col">
+                  First
+                </th>
+
+                <th scope="col">
+                  Last
+                </th>
+                <th scope="col">
+                  Role
+                </th>
+
+                <th scope="col">
+                  Phone
+                </th>
+
+                <th scope="col">
+                  Email
+                </th>
+                <th scope="col">
+                  About
+                </th>
+                <th style="min-width:120px">
+                  Enrolled on
+                </th>
+
+                <th style="min-width:120px">
+                  Published
+                </th>
+
+                <th style="min-width:120px">
+                  Showing
+                </th>
+
+
+
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#">
+                    <i class="far fa-edit" style="cursor:pointer;"></i>
+                  </a>
+
+                </td>
+
+                <td>
+                  <img src="https://res.cloudinary.com/vivacare/image/upload/v1552059374/headhsot_neqs9c.png"
+                    style="height:auto;width:100%;max-width: 125px;">
+                </td>
+
+                <td>
+                  Sam
+                </td>
+                <td>
+                  Ullman
+                </td>
+                <td>
+                  Physician (MD, DO)
+                </td>
+                <td>
+                  (503) 752-5441
+                </td>
+                <td>
+                  <a href="#">
+                    samullman@gmail.com
+                  </a>
+                </td>
+
+
+
+
+                <td>
+                  Sam Ullman is a practicing.....
+                </td>
+                <td>
+                  9/9/2011
+                </td>
+
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">
+                    <i class="far fa-edit" style="cursor:pointer;"></i>
+                  </a>
+
+                </td>
+
+                <td>
+                  <img src="https://res.cloudinary.com/vivacare/image/upload/v1552059374/headhsot_neqs9c.png"
+                    style="height:auto;width:100%;max-width: 125px;">
+                </td>
+
+                <td>
+                  Sam
+                </td>
+                <td>
+                  Ullman
+                </td>
+                <td>
+                  Physician (MD, DO)
+                </td>
+                <td>
+                  (503) 752-5441
+                </td>
+                <td>
+                  <a href="#">
+                    samullman@gmail.com
+                  </a>
+                </td>
+
+
+
+
+                <td>
+                  Sam Ullman is a practicing.....
+                </td>
+                <td>
+                  9/9/2011
+                </td>
+
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+
+                <td>
+                  <i class="fas fa-check"></i>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+
+          <a href="#">
+            Add an existing template
+          </a>
+          |
+          <a href="#">
+            Add a new profile
+          </a>
+        </div>
       </div>
     </div>
   </block>
