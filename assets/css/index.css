@@ -1,3 +1,4 @@
+@import 'registration.css';
 
 .vivacare {
     height: 100%;
@@ -8,21 +9,4 @@
 
 .btn {
     cursor: pointer;
-}
-
-.panel-default {
-    border-color: #ddd;
-}
-
-.panel {
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    min-height: 100vh;
-}
-
-.panel-body {
-    padding: 15px;
 }
