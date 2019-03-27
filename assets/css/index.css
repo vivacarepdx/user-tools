@@ -10,3 +10,15 @@
 .btn {
     cursor: pointer;
 }
+
+.topic-box {
+    height:150px;
+    background: grey;
+    margin-bottom: 24px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.topic-box:hover {
+    background: darkgrey;
+}
