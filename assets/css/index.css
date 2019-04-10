@@ -1,14 +1,5 @@
 @import 'registration.css';
 
-.btn-vivacare,
-.btn-vivacare:hover,
-.btn-vivacare:active,
-.btn-vivacare:visited,
-.btn-vivacare:focus {
-    background-color: #8064A2;
-    border-color: #8064A2;
-}
-
 .vivacare {
     height: 100%;
     min-height: 100vh;
@@ -30,4 +21,12 @@
 
 .topic-box:hover {
     background: darkgrey;
+}
+
+.content-pointer, .content-pointer-2 {
+    transition: all 0.2s ease;
+}
+
+.content-pointer.active, .content-pointer-2.active {
+    transform: rotate(90deg)    
 }
