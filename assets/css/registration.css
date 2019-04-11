@@ -1,8 +1,7 @@
-body {
-    background: lightgrey;
-}
 .registration {
-    background: lightgrey;
+    background: #d0d0d0;
+    padding-bottom: 20px;
+    min-height: 85vh;
 }
 
 .box {
