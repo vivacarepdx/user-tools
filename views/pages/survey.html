@@ -36,41 +36,7 @@
                         <b>Average Score:</b> 6
                     </div>
 
-                    <div class="box2">
-
-                        <button type="button" class="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h3>How would you rate the care you received?</h3>
-
-                        <b>Average Score:</b> 0
-                    </div>
-
                 </div>
-
-                <div class="box2">
-                    <h5>
-                        Add Question
-                    </h5>
-                    <div class="form-group">
-                        <input class="form-control survey-input" type="text" />
-                    </div>
-                    <script>
-                        function go() {
-                            $('.surveys').append('<div class= "box2"><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button><h3>' + $('.survey-input').val() + '</h3><b>Average Score:</b> 0</div >')
-                            $('.survey-input').val("");
-                            setTimeout(function () {
-                                $(".surveys").sortable();
-                            })
-                        }
-                    </script>
-                    <div class="btn btn-primary" onclick="go()">
-                        Add
-                    </div>
-
-
-                </div>
-
             </div> <!-- col-sm-8 -->
 
             <div class="col">
