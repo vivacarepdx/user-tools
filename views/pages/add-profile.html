@@ -4,59 +4,25 @@
 			<div class="col">
 			</div>
 
-			<div class="col-sm-12 col-md-10" >
+			<div class="col-sm-12 col-md-10">
 
 				<div class="box2">
 					<h1>
 						Add Profile
 					</h1>
 
-					<div class="form-group" style="margin-bottom:24px;">
-					<label class="form-check-label" for="defaultCheck1">
-							<b>Display profile</b>
-						  </label>
-					<div class="form-check">
-							<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-							
-						</div>
-					</div>
-
 					<div class="form-group">
-							<label class="my-1 mr-2"><b>Profile Image</b></label>
-
-						<div class="form-row">
-							<div class="col-2">
-								<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
-								style="width:100%;background: grey;max-width:240px;" />
-							</div>
-
-							<div class="col-10">
-									<div class="input-group">
-										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="inputGroupFile01"
-												aria-describedby="inputGroupFileAddon01">
-											<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-										</div>
-									</div>
-	
-							</div>
-		
+						<div class="custom-control custom-switch" style="display:inline;">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label" for="customSwitch1">Display</label>
 						</div>
-					</div>
 
-					<div class="form-group">
-						<label class="my-1 mr-2"><b>Email</b></label>
-						<input type="email" class="form-control" placeholder="Email">
 					</div>
 
 
 					<div class="form-group">
 						<div class="form-row">
 
-							<div class="col-sm-2">
-								<label class="my-1 mr-2"><b>Prefix</b></label>
-								<input type="text" class="form-control" placeholder="Prefix">
-							</div>
 							<div class="col">
 								<label class="my-1 mr-2"><b>First</b><span style="color: red;">*</span></label>
 								<input type="text" class="form-control" placeholder="First">
@@ -82,12 +48,39 @@
 
 					</div>
 
+					<div class="form-group">
+						<label class="my-1 mr-2"><b>Profile Image</b></label>
+
+						<div class="form-row">
+							<div class="col-2">
+								<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
+									style="width:100%;background: grey;max-width:240px;" />
+							</div>
+
+							<div class="col-10">
+								<div class="input-group">
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="inputGroupFile01"
+											aria-describedby="inputGroupFileAddon01">
+										<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
 
 					<div class="form-group">
 						<div class="form-row">
 
 							<div class="col">
-								<label class="my-1 mr-2"><b>Profession</b><span style="color: red;">*</span></label>
+								<label class="my-1 mr-2"><b>Role</b><span style="color: red;">*</span></label>
 								<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
 									<option selected>Choose...</option>
 									<option value="Physician (MD, DO)">Physician (MD, DO)</option>
@@ -139,13 +132,22 @@
 					</div>
 
 					<div class="form-group">
-						<label><b>Biography</b></label>
-						<textarea class="form-control" rows="6"></textarea>
+						<label class="my-1 mr-2"><b>Email</b></label>
+						<input type="email" class="form-control" placeholder="Email">
+					</div>
+
+					<div class="form-group">
+						<label><b>Primary Location</b></label>
+						<select class="custom-select my-1 mr-sm-2" name="" id="">
+							<option value="">Location 1</option>
+							<option value="">Location 2</option>
+							<option value="">Location 3</option>
+						</select>
 					</div>
 
 					<div>
 						<a href="profile">
-						<button class="btn btn-primary">Save</button>
+							<button class="btn btn-primary">Save</button>
 						</a>
 
 					</div>
