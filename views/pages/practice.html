@@ -9,20 +9,17 @@
 					<h1>
 						Practice
 					</h1>
-					<h4>
-						General
-					</h4>
 
 					<div class="form-group">
 						<label class="my-1 mr-2"><b>Logo</b></label>
 
 						<div class="form-row">
-							<div class="col-2">
+							<div class="col-sm-4 col-md-2" style="margin-bottom: 14px;">
 								<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
 									style="width:100%;background: grey;max-width:240px;" />
 							</div>
 
-							<div class="col-10">
+							<div class="col-sm-8 col-md-4">
 								<div class="input-group">
 									<div class="custom-file">
 										<input type="file" class="custom-file-input" id="inputGroupFile01"
@@ -34,45 +31,59 @@
 						</div>
 					</div>
 
-
 					<div class="form-group">
-						<label class="my-1 mr-2"><b>Title</b></label>
-						<input type="text" class="form-control" placeholder="Name" value="Vivacare">
+						<div class="form-row">
+							<div class="col-sm-12 col-md-6">
+								<label class="my-1 mr-2"><b>Organization Name</b></label>
+								<input type="text" class="form-control" placeholder="Organization Name">
+							</div>
+
+
+							<div class="col-sm-12 col-md-6">
+								<label class="my-1 mr-2"><b>Display Name</b></label>
+								<input type="text" class="form-control" placeholder="Display Name">
+							</div>
+
+						</div>
+
 					</div>
 
 					<div class="form-group">
-						<label class="my-1 mr-2"><b>Website URL</b></label>
-						<input type="text" class="form-control" placeholder="Website URL"
-							value="https://www.vivacare.com/">
+						<label class="my-1 mr-2"><b>Practice Website URL</b></label>
+						<input type="text" class="form-control" placeholder="Practice Website URL">
+					</div>
 
+					<div class="form-group">
+						<label class="my-1 mr-2"><b>Patient Portal URL</b></label>
+						<input type="text" class="form-control" placeholder="Practice Portal URL">
 					</div>
 
 
-					<div>
-						<a href="#">
-							<button class="btn btn-primary">Save</button>
-						</a>
+					<div class="form-group">
+						<label><b>About</b></label>
+						<textarea class="form-control" rows="4"></textarea>
+					</div>
+
+					<div class="form-group">
+						<label><b>Insurance</b></label>
+						<textarea class="form-control" rows="4"></textarea>
 					</div>
 				</div> <!-- box -->
 
 				<div class="box2">
-					<h4>
-						About
-					</h4>
+					<a href="#">
+						<button class="btn btn-primary">Save</button>
+					</a>
 
-					<div class="form-group">
-						<textarea class="form-control" rows="4"></textarea>
-					</div>
-
-					<div>
-						<a href="#">
-							<button class="btn btn-primary">Save</button>
-						</a>
-					</div>
+					<a href="#">
+						<button class="btn btn-secondary">Cancel</button>
+					</a>
 				</div>
 
 				<div class="box2">
 
+					<h2>Staff</h2>
+					<hr>
 					<div class="row">
 						<div class="col-2" style="padding-right:0px;">
 							<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
@@ -89,10 +100,12 @@
 
 
 							<div>
-								<a href="edit-profile" style="margin-right: 6px;">
-									Edit Profile
+								<a href="edit-staff">
+									<i class="far fa-edit"></i>
 								</a>
-
+								<a href="#" >
+										<i class="far fa-trash-alt"></i>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -113,23 +126,26 @@
 								Physician (MD, DO), Dermatolgoy
 							</div>
 
-
 							<div>
-								<a href="edit-profile" style="margin-right: 6px;">
-									Edit Profile
+								<a href="edit-staff">
+									<i class="far fa-edit"></i>
 								</a>
-
+								<a href="#">
+										<i class="far fa-trash-alt"></i>
+								</a>
 							</div>
 						</div>
-
-
 					</div>
 
-					<a href="add-profile" class="btn btn-primary" style="margin-top:12px;">
-						Add a new profile
+					<hr>
+
+					<a href="add-staff" class="btn btn-primary">
+						Add Staff Name
 					</a>
 
+
 				</div>
+
 
 				<div class="box2">
 					<h2>
@@ -151,23 +167,6 @@
 						</div>
 					</a>
 				</div>
-
-				<div class="box2">
-					<h4>
-						Insurance
-					</h4>
-
-					<div class="form-group">
-						<textarea class="form-control" rows="4"></textarea>
-					</div>
-
-					<div>
-						<a href="#">
-							<button class="btn btn-primary">Save</button>
-						</a>
-					</div>
-				</div>
-
 			</div> <!-- col-sm-8 -->
 
 			<div class="col">

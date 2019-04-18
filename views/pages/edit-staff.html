@@ -8,25 +8,34 @@
 
 				<div class="box2">
 					<h1>
-						Edit Profile
+						Edit Staff Name
 					</h1>
 
+
 					<div class="form-group">
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptionsxx" id="inlineRadio1xx"
-								value="option1" checked>
-							<label class="form-check-label" for="inlineRadio1xx">Display</label>
-						</div>
-						<div class="form-check form-check-inline">
-							<input class="form-check-input" type="radio" name="inlineRadioOptionsxx" id="inlineRadio2xx"
-								value="option2">
-							<label class="form-check-label" for="inlineRadio2xx">Do Not Display</label>
+						<label class="my-1 mr-2"><b>Profile Image</b></label>
+						<div class="form-row">
+							<div class="col-md-2 col-sm-4">
+								<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
+									style="width:100%;background: grey;max-width:240px;" />
+							</div>
+
+							<div class="col-md-4 col-sm-8">
+								<div class="input-group">
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" id="inputGroupFile01"
+											aria-describedby="inputGroupFileAddon01">
+										<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+									</div>
+								</div>
+
+							</div>
+
 						</div>
 					</div>
 
 					<div class="form-group">
 						<div class="form-row">
-
 							<div class="col">
 								<label class="my-1 mr-2"><b>First</b><span style="color: red;">*</span></label>
 								<input type="text" class="form-control" placeholder="First">
@@ -51,32 +60,6 @@
 						</div>
 
 					</div>
-
-					<div class="form-group">
-						<label class="my-1 mr-2"><b>Profile Image</b></label>
-
-						<div class="form-row">
-							<div class="col-2">
-								<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
-									style="width:100%;background: grey;max-width:240px;" />
-							</div>
-
-							<div class="col-10">
-								<div class="input-group">
-									<div class="custom-file">
-										<input type="file" class="custom-file-input" id="inputGroupFile01"
-											aria-describedby="inputGroupFileAddon01">
-										<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-
-
 
 
 
@@ -136,22 +119,18 @@
 					</div>
 
 					<div class="form-group">
-						<label class="my-1 mr-2"><b>Email</b></label>
-						<input type="email" class="form-control" placeholder="Email">
+						<label class="my-1 mr-2"><b>About</b></label>
+						<textarea class="form-control" rows="4"></textarea>
 					</div>
 
-					<div class="form-group">
-						<label><b>Primary Location</b></label>
-						<select class="custom-select my-1 mr-sm-2" name="" id="">
-							<option value="">Location 1</option>
-							<option value="">Location 2</option>
-							<option value="">Location 3</option>
-						</select>
-					</div>
 
 					<div>
 						<a href="profile">
 							<button class="btn btn-primary">Save</button>
+						</a>
+
+						<a href="profile">
+							<button class="btn btn-secondary">Cancel</button>
 						</a>
 
 					</div>
