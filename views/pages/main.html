@@ -4,50 +4,79 @@
       <div class="col-sm-12 col-md-10">
         <div class="box2">
           <div class="row">
-            <div class="col-sm-12 col-md-3">
-              <h5>
-                <a href="#" style="color:inherit;">
-                  View Your Toolkit
-                </a>
-              </h5>
-            </div>
+            <div class="col-sm-12">
+              <a href="#" class="btn btn-primary">
+                View Toolkit
+              </a>
 
-            <div class="col-sm-12 col-md-3">
-
-              Toolkit Views: 6
-            </div>
-            
-            <div class="col-sm-12 col-md-3">
-              <h5>
-                <a href="#" style="color:inherit;">
-                  View Your Profile
-                </a>
-              </h5>
-            </div>
-
-            <div class="col-sm-12 col-md-3">
-              Profile Views: 6
+              <a href="#" class="btn btn-success">
+                View Profile
+              </a>
             </div>
           </div>
         </div>
 
         <div class="box2">
-          
-          <div class="row">
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+          <canvas id="myChart"></canvas>
+          <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+              // The type of chart we want to create
+              type: 'line',
+
+              // The data for our dataset
+              data: {
+                labels: ['Tue. 1/11', 'Wed. 1/12', 'Thu. 1/13', 'Fri. 1/14', 'Sat. 1/15', 'Sun. 1/16', 'Mon. 1/17'],
+                datasets: [{
+                  label: 'Toolkit Views',
+                  backgroundColor: '#007bff77',
+                  borderColor: '#007bff',
+                  data: [0, 10, 5, 22, 20, 30, 13]
+                }, {
+                  label: 'Profile Views',
+                  backgroundColor: '#28a74577',
+                  borderColor: '#28a745',
+                  data: [0, 20, 5, 2, 20, 30, 3]
+                },]
+              },
+
+              // Configuration options go here
+              options: {}
+            });
+          </script>
+          <div class="row" style="text-align:center;margin: 20px 0px;">
+            <div class="col-sm-6">
+              <h4>
+                Toolkit Views: 69
+              </h4>
+            </div>
+
+            <div class="col-sm-6">
+              <h4>
+                Profile Views: 74
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2">
+          <h2>
+            Eliot Mostow, MD
+          </h2>
+
+          <div class="row" style="margin-bottom: 20px;">
             <div class="col-sm-4 col-md-2">
               <img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
                 style="width:100%;background: grey;max-width:240px;" />
             </div>
 
-            <div class="col-sm-12 col-md-10">
-              <h4>
-                  Eliot Mostow, MD
-              </h4>
-
+            <div class="col-sm-8 col-md-10">
               <div>
-                  <a href="your-profile.html">
-                    Edit Profile
-                  </a>
+                <a href="profile"> 
+                  Edit Profile
+                </a>
               </div>
 
               <div>
@@ -63,33 +92,34 @@
               </div>
             </div>
           </div>
-        </div> <!-- box -->
 
-        <div class="box2">
+          <h4>
+              Rendon Center for Dermatology and Aesthetic Medicine
+            </h4>
+
           <div class="row">
             <div class="col-sm-4 col-md-2">
-                <img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
+              <img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
                 style="width:100%;background: grey;max-width:240px;" />
             </div>
 
             <div class="col-sm-12 col-md-10">
-                <h4>
-                  Rendon Center for Dermatology and Aesthetic Medicine
-                </h4>              
+              <div>
+                <a href="practice">
+                  Edit Practice
+                </a>
+              </div>
 
-                <div>
-                  <a href="your-practice"> 
-                    Edit Practice
-                  </a>
-                </div>
-
-                <div>
-                  Display Name: Rendon Center for Dermatology and Aesthetic Medicine 
-                </div>
+              <div>
+                  Organization Name: Rendon Center for Dermatology and Aesthetic Medicine
+              </div>
+              <div>
+                Display Name: Rendon Center for Dermatology and Aesthetic Medicine
+              </div>
             </div>
           </div>
 
-          
+
 
         </div>
 
@@ -97,12 +127,7 @@
           <h4>
             Patient Education
           </h4>
-          
-          <div>
-            <a href="#">
-              Edit Patient Education
-            </a>
-          </div>
+
 
           <div>
             Patient Education Content: Dermatology, Cardiology
