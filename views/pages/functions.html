@@ -9,17 +9,40 @@
 					</h1>
 
 					<hr>
-						<h4>
-							Your Toolkit
-						</h4>					
 
-						<div>
-							Display your own Toolkit / Display a different Toolkit
-						</div>		
+						<h4>
+							<span style="margin-right:4px;">
+								Display your own Toolkit
+							</span>
+								<div class="custom-control custom-switch" style="display:inline;" >
+										<input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="toggle()">
+										<label class="custom-control-label" for="customSwitch1"></label>
+										</div>
+							<span>
+								Display a different Toolkit
+							</span>
+						</h4>
+
+						<script>
+							function toggle () {
+								if ( $('.my-fieldset').attr('disabled') == "disabled" ) {
+									$('.my-fieldset').attr('disabled', false);
+									
+									$('.my-form-control').val("")
+									$('.my-form-control').focus()
+
+								} else {
+									$('.my-fieldset').attr('disabled', true);
+									$('.my-form-control').val("mostow")
+								}
+								
+							}
+						</script>
 
 						<div class="form-group">
-							<label><b>Code</b></label>
-
+							<fieldset disabled="disabled" class="my-fieldset">
+								<input type="text" class="form-control disabled my-form-control" value="mostow"/>
+							</fieldset>
 						</div>
 					<hr>
 					<h4>
