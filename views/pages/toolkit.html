@@ -9,10 +9,10 @@
         <div class="box2">
           <h1>Toolkit</h1>
 
-    
+
 
           <div style="margin-bottom:8px;">
-            Filter: 
+            Filter:
             <a href="#">
               All
             </a>
@@ -53,10 +53,10 @@
           <hr>
           <div class="row">
             <div class="col-1" style="text-align:center;padding-right:0px;">
-                <div class="custom-control custom-switch" style="display:inline;">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch333">
-                    <label class="custom-control-label" for="customSwitch333"></label>
-                </div>
+              <div class="custom-control custom-switch" style="display:inline;">
+                <input type="checkbox" class="custom-control-input" id="customSwitch333">
+                <label class="custom-control-label" for="customSwitch333"></label>
+              </div>
             </div>
 
             <div class="col-11">
@@ -67,54 +67,10 @@
 
               <div class="collapse multi-collapse" id="multiCollapseExample1" style="padding-top:4px;">
                 <div style="padding: 4px 0px;">
-                    <div class="custom-control custom-switch" style="display:inline;">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                        <label class="custom-control-label" for="customSwitch1"></label>
-                      </div>
-                  <a href="acne-diet">
-                    Acne & Diet
-                    </a>
-                    |
-                    <a href="edit-content.html">
-                      Edit
-                    </a>
-                    |
-                    <a href="add-tips-and-wisdom.html">
-                      Add Tips & Wisdom
-                    </a>
-                    |
-                  Source: American Heart Association
-                  
-                </div>
-
-                <div style="padding: 4px 0px;">
-
-                    <div class="custom-control custom-switch" style="display:inline;">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                        <label class="custom-control-label" for="customSwitch2"></label>
-                      </div>
-                  <a href="acne-diet">
-                      Acne & Diet
-                    </a>
-                    |
-                    <a href="edit-content.html">
-                      Edit
-                    </a>
-                    |
-                    <a href="add-tips-and-wisdom.html">
-                      Add Tips & Wisdom
-                    </a>
-                    |
-                  Source: American Heart Association
-                    
-                </div>
-
-                <div style="padding: 4px 0px;">
-
-                    <div class="custom-control custom-switch" style="display:inline;">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                        <label class="custom-control-label" for="customSwitch3"></label>
-                      </div>
+                  <div class="custom-control custom-switch" style="display:inline;">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1"></label>
+                  </div>
                   <a href="acne-diet">
                     Acne & Diet
                   </a>
@@ -128,8 +84,52 @@
                   </a>
                   |
                   Source: American Heart Association
-                  
-                
+
+                </div>
+
+                <div style="padding: 4px 0px;">
+
+                  <div class="custom-control custom-switch" style="display:inline;">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                    <label class="custom-control-label" for="customSwitch2"></label>
+                  </div>
+                  <a href="acne-diet">
+                    Acne & Diet
+                  </a>
+                  |
+                  <a href="edit-content.html">
+                    Edit
+                  </a>
+                  |
+                  <a href="add-tips-and-wisdom.html">
+                    Add Tips & Wisdom
+                  </a>
+                  |
+                  Source: American Heart Association
+
+                </div>
+
+                <div style="padding: 4px 0px;">
+
+                  <div class="custom-control custom-switch" style="display:inline;">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                    <label class="custom-control-label" for="customSwitch3"></label>
+                  </div>
+                  <a href="acne-diet">
+                    Acne & Diet
+                  </a>
+                  |
+                  <a href="edit-content.html">
+                    Edit
+                  </a>
+                  |
+                  <a href="add-tips-and-wisdom.html">
+                    Add Tips & Wisdom
+                  </a>
+                  |
+                  Source: American Heart Association
+
+
                 </div>
 
               </div> <!-- multi-collapse -->
@@ -141,21 +141,38 @@
         </div> <!-- box -->
 
         <div class="box2">
-            <h4 style="margin-bottom:4px;">
-              Source
-            </h4>
+          <h4>
+            Toolkit URL
+          </h4>
 
-            <div class="form-inline">
-              <label style="margin-right:4px;"><b>www.vivacare.com/</b></label>
-              <input type="text" class="form-control" value="mostow" />
-            </div>
-
-            <div class="btn btn-primary" style="margin-top:4px;">
-              Update
-            </div>
+          <div class="form-group">
+              <input type="text" class="form-control url" value="akronderm" onchange="update()" />
+              <div>
+                <a href="#" target="_blank" class="href-target">
+                  https://www.vivacare.com/<span class="target"></span>
+                </a>
+              </div>
           </div>
 
-        
+          <script>
+            function update () {
+              let val = $('.url').val();
+              $('.target').text( val )
+              $('.href-target').attr('href', "https://www.vivacare.com/" + val);
+
+            }
+
+            setTimeout( update )
+          </script>
+
+          
+
+          <div class="btn btn-primary">
+            Save
+          </div>
+        </div>
+
+
       </div> <!-- col-sm-8 -->
 
       <div class="col">
