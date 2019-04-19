@@ -14,23 +14,28 @@
                     <input type="email" class="form-control" placeholder="Email" style="max-width: 400px;">
                     <small>Your personal email address is not displayed online and is not shared with 3rd parties.</small>
             </div>
+
+        
           
           <div class="form-group">
-            <label>
+            
               <span style="margin-right:4px;">
                 Display Your Own Toolkit
-							</span>
+              </span>
+              <label>
 								<div class="custom-control custom-switch" style="display:inline;" >
 										<input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="toggle()">
 										<label class="custom-control-label" for="customSwitch1"></label>
-										</div>
+                    </div>
+                    
+                  </label>
 							<span>
+
 								Display A Different Toolkit
               </span>
-            </label>
 
               <fieldset disabled="disabled" class="my-fieldset">
-                  <input type="text" class="form-control form-control-lg disabled my-form-control" placeholder="Enter Toolkit URL Here" value="akronderm"/>
+                  <input type="text" class="form-control form-control-lg disabled my-form-control" placeholder="Toolkit URL" value="akronderm"/>
                 </fieldset>
 
               
@@ -46,7 +51,7 @@
 
 								} else {
 									$('.my-fieldset').attr('disabled', true);
-									$('.my-form-control').val("mostow")
+									$('.my-form-control').val("akronderm")
 								}
 							}
 						</script>
