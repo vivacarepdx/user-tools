@@ -14,64 +14,46 @@
                     <input type="email" class="form-control" placeholder="Email" style="max-width: 400px;">
                     <small>Your personal email address is not displayed online and is not shared with 3rd parties.</small>
             </div>
+            <hr>
 
-        <hr>
-        <ul class="nav nav-tabs">
-            <li class="nav-item" style="width:25%;text-align: center;">
-              <a class="nav-link" href="#">Active</a>
-            </li>
-            <li class="nav-item" style="width:25%;text-align: center;">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item" style="width:25%; text-align: center;">
-              <a class="nav-link active" href="#">Link</a>
-            </li>
-            <li class="nav-item" style="width:25%; text-align: center;">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-
-          <div>
-            aldsfml
-          </div>
+            <h4>
+                My Toolkit URL
+              </h4>
+    
+              <div class="form-group">
+                  <input type="text" class="form-control url" placeholder="Toolkit URL" value="akronderm" onchange="update()" />
+                  <div>
+                    <a href="#" target="_blank" class="href-target">
+                      https://www.vivacare.com/<span class="target"></span>
+                    </a>
+                  </div>
+              </div>
+    
+              <script>
+                function update () {
+                  let val = $('.url').val();
+                  $('.target').text( val )
+                  $('.href-target').attr('href', "https://www.vivacare.com/" + val);
+    
+                }
+    
+                setTimeout( update )
+              </script>
+            <hr>
+              <h4>
+                Preferred Toolkit URL
+              </h4>
           <div class="form-group">
-            
-              <span style="margin-right:4px;">
-                Display Your Own Toolkit
-              </span>
-              <label>
-								<div class="custom-control custom-switch" style="display:inline;" >
-										<input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="toggle()">
-										<label class="custom-control-label" for="customSwitch1"></label>
-                    </div>
-                    
-                  </label>
-							<span>
-
-								Display A Different Toolkit
-              </span>
-
-              <fieldset disabled="disabled" class="my-fieldset">
-                  <input type="text" class="form-control form-control-lg disabled my-form-control" placeholder="Toolkit URL" value="akronderm"/>
-                </fieldset>
-
-              
+                <input type="text" class="form-control  my-form-control" placeholder="Toolkit URL" />
             </div>
 
-						<script>
-							function toggle () {
-								if ( $('.my-fieldset').attr('disabled') == "disabled" ) {
-									$('.my-fieldset').attr('disabled', false);
-									
-									$('.my-form-control').val("")
-									$('.my-form-control').focus()
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">
+                    Use the Educational Resources and Practice Information found on the Preferred Toolkit URL.
+                </label>
+              </div>
 
-								} else {
-									$('.my-fieldset').attr('disabled', true);
-									$('.my-form-control').val("akronderm")
-								}
-							}
-						</script>
             <hr>
             <div class="btn btn-primary">
               Save

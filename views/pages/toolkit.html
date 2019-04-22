@@ -140,35 +140,7 @@
 
         </div> <!-- box -->
 
-        <div class="box2">
-            <h4>
-                Toolkit URL
-              </h4>
-    
-              <div class="form-group">
-                  <input type="text" class="form-control url" value="akronderm" onchange="update()" />
-                  <div>
-                    <a href="#" target="_blank" class="href-target">
-                      https://www.vivacare.com/<span class="target"></span>
-                    </a>
-                  </div>
-              </div>
-    
-              <script>
-                function update () {
-                  let val = $('.url').val();
-                  $('.target').text( val )
-                  $('.href-target').attr('href', "https://www.vivacare.com/" + val);
-    
-                }
-    
-                setTimeout( update )
-              </script>
-    
-              <button class="btn btn-primary">
-                Save
-              </button>
-        </div>
+
 
 
       </div> <!-- col-sm-8 -->
