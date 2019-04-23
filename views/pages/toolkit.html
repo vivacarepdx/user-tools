@@ -62,7 +62,23 @@
             <div class="col-11">
               <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false"
                 aria-controls="multiCollapseExample1" style="text-decoration:none;color:black;" onclick="doit()">
-                <h6 style="display:inline;">Acne</h6>
+                <h6 style="display:inline;" class="" onclick="rotate()">
+                  Acne
+                  <i class="fas fa-caret-right" style="position:relative;left:6px;"></i>
+                </h6>
+
+                <script>
+                  function rotate ( e ) {
+                    $('.fa-caret-right').toggleClass('fa-rotate-90');
+                  }
+                </script>
+
+                <style>
+                  .fa-caret-right {
+                    transition: all 0.2s ease;
+                  }
+                </style>
+
               </a>
 
               <div class="collapse multi-collapse" id="multiCollapseExample1" style="padding-top:4px;">
@@ -71,9 +87,7 @@
                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
                     <label class="custom-control-label" for="customSwitch1"></label>
                   </div>
-                  <a href="acne-diet">
                     Acne & Diet
-                  </a>
                   |
                   <a href="edit-content.html">
                     Edit
@@ -93,9 +107,7 @@
                     <input type="checkbox" class="custom-control-input" id="customSwitch2">
                     <label class="custom-control-label" for="customSwitch2"></label>
                   </div>
-                  <a href="acne-diet">
-                    Acne & Diet
-                  </a>
+                  Actinic Keratoses
                   |
                   <a href="edit-content.html">
                     Edit
@@ -115,9 +127,7 @@
                     <input type="checkbox" class="custom-control-input" id="customSwitch3">
                     <label class="custom-control-label" for="customSwitch3"></label>
                   </div>
-                  <a href="acne-diet">
-                    Acne & Diet
-                  </a>
+                  Atopic Dermatitis
                   |
                   <a href="edit-content.html">
                     Edit
@@ -139,10 +149,6 @@
           <hr>
 
         </div> <!-- box -->
-
-
-
-
       </div> <!-- col-sm-8 -->
 
       <div class="col">
