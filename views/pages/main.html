@@ -74,18 +74,28 @@
               </h3>
 
               <div style="margin-bottom:12px;"> 
-                <select class="form-control">
-                  <option value="">Choose...</option>
+                <select class="form-control form-control-sm" onchange="toggle()">
+                  <option data-toggle="disable" value="">Choose...</option>
+                  <option data-toggle="enable" value="actinic-keratosis">Actinic Keratosis</option>
+                  <option data-toggle="enable" value="acne-diet" >Acne & Diet</option>
+                  <option data-toggle="enable" value="other-condition">Other Condition</option>
                 </select>
               </div>
 
-              <div class="btn btn-success btn-sm disabled" style="margin-bottom:12px;">
+              <script>
+                function toggle () {
+                  if ($(event.currentTarget).find('option:selected').data('toggle') == "enable" )  {
+                    $('.add-tips-wisdom').removeClass('disabled')
+                  } else {
+                    $('.add-tips-wisdom').addClass('disabled') 
+                  }
+                  
+                }
+              </script>
+
+              <div class="btn btn-success btn-sm disabled add-tips-wisdom" style="margin-bottom:12px;">
                 Add Tips & Wisdom
               </div>
-
-              <h6>
-                Your Tips & Wisdom
-              </h6>
 
               <div class="">
                 <div>
