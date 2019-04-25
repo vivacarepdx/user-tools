@@ -68,37 +68,37 @@
           </div>
 
           <div class="col-sm-12 col-md-6">
-            <div class="box2" style="height: 93%;">
+            <div class="box2" >
               <h3>
                 Tips & Wisdom
               </h3>
 
-              <div style="margin-bottom:12px;"> 
+              <div style="margin-bottom:12px;">
                 <select class="form-control form-control-sm" onchange="toggle()">
                   <option data-toggle="disable" value="">Choose...</option>
                   <option data-toggle="enable" value="actinic-keratosis">Actinic Keratosis</option>
-                  <option data-toggle="enable" value="acne-diet" >Acne & Diet</option>
+                  <option data-toggle="enable" value="acne-diet">Acne & Diet</option>
                   <option data-toggle="enable" value="other-condition">Other Condition</option>
                 </select>
               </div>
 
               <script>
-                function toggle () {
-                  if ($(event.currentTarget).find('option:selected').data('toggle') == "enable" )  {
+                function toggle() {
+                  if ($(event.currentTarget).find('option:selected').data('toggle') == "enable") {
                     $('.add-tips-wisdom').removeClass('disabled')
                   } else {
-                    $('.add-tips-wisdom').addClass('disabled') 
+                    $('.add-tips-wisdom').addClass('disabled')
                   }
-                  
+
                 }
               </script>
 
-              <div class="btn btn-success btn-sm disabled add-tips-wisdom" style="margin-bottom:12px;">
+              <div class="btn btn-success btn-sm disabled add-tips-wisdom" >
                 Add Tips & Wisdom
               </div>
 
               <hr>
-              <div class="">
+              <div class="" style="max-height:68px;overflow-y:scroll;">
                 <div>
                   <i>6/19/2019</i>
                   <a href="#">
@@ -107,12 +107,26 @@
                 </div>
 
                 <div>
-                    <i>6/19/2019</i>
-                    <a href="#">
-                      Actinic Keratosis
-                    </a>
+                  <i>6/19/2019</i>
+                  <a href="#">
+                    Actinic Keratosis
+                  </a>
                 </div>
 
+                <div>
+                  <i>6/19/2019</i>
+                  <a href="#">
+                    Acne & Diet
+                  </a>
+                </div>
+
+
+                <div>
+                  <i>6/19/2019</i>
+                  <a href="#">
+                    Acne & Diet
+                  </a>
+                </div>
               </div>
             </div>
           </div>
