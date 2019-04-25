@@ -19,8 +19,8 @@
 								role="tab" aria-controls="email" aria-selected="true">Email</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#basics" id="basics-tab" data-toggle="tab" href="#basics"
-								role="tab" aria-controls="basics" aria-selected="false">Basics</a>
+							<a class="nav-link" href="#profile" id="profile-tab" data-toggle="tab" href="#profile"
+								role="tab" aria-controls="profile" aria-selected="false">Profile</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#practice" id="practice-tab" data-toggle="tab" href="#practice"
@@ -40,16 +40,19 @@
 
 					<div class="tab-content" style="padding:16px 0;">
 						<div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
-							<small>
-								Your email will not be displayed or shared with any 3rd parties.
-							</small>
+
 							<div class="form-group">
 								<div class="form-row">
 									<div class="col">
 										<label><b>Email</b><span style="color: red;">*</span></label>
 										<input type="email" class="form-control" placeholder="Email">
 									</div>
+
 								</div>
+
+								<small>
+									Your email will not be displayed or shared with any 3rd parties.
+								</small>
 
 
 
@@ -65,7 +68,7 @@
 								<nav aria-label="Page navigation example" style="float:right;">
 									<ul class="pagination">
 										<li class="page-item ">
-											<a href="#" class="page-link" data-path="basics" onclick="reselect()">
+											<a href="#" class="page-link" data-path="profile" onclick="reselect()">
 												Next
 												<i class="fas fa-chevron-right"></i>
 											</a>
@@ -75,7 +78,7 @@
 							</div>
 
 						</div>
-						<div class="tab-pane fade" id="basics" role="tabpanel" aria-labelledby="basics-tab">
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 							<div class="form-group">
 								<div class="form-row">
 									<div class="col">
@@ -155,6 +158,31 @@
 										</select>
 									</div>
 								</div>
+							</div>
+
+							<div class="form-group">
+
+								<label class="my-1 mr-2"><b>Profile Image</b></label>
+
+								<div class="form-row">
+									<div class="col-sm-4 col-md-2" style="text-align: center;">
+										<img src="https://res.cloudinary.com/vivacare/image/upload/v1553450375/No_avatar.png"
+											style="width:100%;background: grey;max-width:240px;" />
+
+									</div>
+
+									<div class="col-sm-8 col-md-4">
+										<div class="input-group">
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="inputGroupFile01"
+													aria-describedby="inputGroupFileAddon01">
+												<label class="custom-file-label" for="inputGroupFile01">Choose
+													file</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
 							</div>
 
 							<div style="position:relative">
@@ -391,7 +419,7 @@
 								<nav aria-label="Page navigation example">
 									<ul class="pagination">
 										<li class="page-item">
-											<a class="page-link" href="#" data-path="basics" onclick="reselect()">
+											<a class="page-link" href="#" data-path="profile" onclick="reselect()">
 												<i class="fas fa-chevron-left"></i>
 												Previous
 											</a>
@@ -997,12 +1025,14 @@
 									arises; otherwise, such claim or cause of action shall be permanently barred.</p>
 							</div>
 
-							<div class="custom-control custom-checkbox my-1 mr-sm-2" style="margin-bottom:14px;">
-								<input type="checkbox" class="custom-control-input" id="7">
-								<label class="custom-control-label" for="7">
-									Agree to Terms of Service
-								</label>
-								<span style="color: red;">*</span>
+							<div class="form-group">
+								<div class="custom-control custom-checkbox my-1 mr-sm-2" style="margin-bottom:14px;">
+									<input type="checkbox" class="custom-control-input" id="7">
+									<label class="custom-control-label" for="7">
+										Agree to Terms of Service
+									</label>
+									<span style="color: red;">*</span>
+								</div>
 							</div>
 
 							<div style="position:relative">
@@ -1036,7 +1066,8 @@
 								<div class="col"></div>
 								<div class="col">
 									<div style="margin:14px 0px;">
-										<button type="button" class="btn btn-success btn-block">Create My Account</button>
+										<button type="button" class="btn btn-success btn-block">Create My
+											Account</button>
 									</div>
 								</div>
 							</div>
