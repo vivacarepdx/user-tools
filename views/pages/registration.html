@@ -15,8 +15,8 @@
 
 					<ul class="nav nav-pills nav-fill">
 						<li class="nav-item">
-							<a class="nav-link active" href="#email" id="email-tab" data-toggle="tab" href="#email"
-								role="tab" aria-controls="email" aria-selected="true">Email</a>
+							<a class="nav-link active" href="#general" id="general-tab" data-toggle="tab" href="#general"
+								role="tab" aria-controls="general" aria-selected="true">General</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#profile" id="profile-tab" data-toggle="tab" href="#profile"
@@ -34,12 +34,12 @@
 
 						<li class="nav-item">
 							<a class="nav-link" href="#confirm" id="confirm-tab" data-toggle="tab" href="#confirm"
-								role="tab" aria-controls="confirm" aria-selected="false">Confirm</a>
+								role="tab" aria-controls="confirm" aria-selected="false">Confirmation</a>
 						</li>
 					</ul>
 
 					<div class="tab-content" style="padding-top:16px;">
-						<div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
+						<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
 
 							<div class="form-group">
 								<div class="form-row">
@@ -65,39 +65,39 @@
 							</div>
 
 							<div class="row" style="position: relative;top: 12px;">
-									<div class="col-3">
-											<nav aria-label="Page navigation example">
-													<ul class="pagination">
-														<li class="page-item disabled">
-															<a href="#" class="page-link" data-path="profile" onclick="reselect()">
-																<i class="fas fa-chevron-left"></i>
-																Previous
-																
-															</a>
-														</li>
-													</ul>
-												</nav>
-									</div>
-	
-									<div class="col-6" style="text-align:center;position: relative;top: 10px;">
-										<a href="#">
-											Already have an account? Login.
-										</a>
-									</div>
-	
-									<div class="col-3">
-									<nav aria-label="Page navigation example" style="float:right;">
-											<ul class="pagination">
-												<li class="page-item ">
-													<a href="#" class="page-link" data-path="profile" onclick="reselect()">
-														Next
-														<i class="fas fa-chevron-right"></i>
-													</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
+								<div class="col-3">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination">
+											<li class="page-item disabled">
+												<a href="#" class="page-link" data-path="profile" onclick="reselect()">
+													<i class="fas fa-chevron-left"></i>
+													Previous
+
+												</a>
+											</li>
+										</ul>
+									</nav>
 								</div>
+
+								<div class="col-6" style="text-align:center;position: relative;top: 10px;">
+									<a href="#">
+										Already have an account? Login.
+									</a>
+								</div>
+
+								<div class="col-3">
+									<nav aria-label="Page navigation example" style="float:right;">
+										<ul class="pagination">
+											<li class="page-item">
+												<a href="#" class="page-link" data-path="profile" onclick="reselect()">
+													Next
+													<i class="fas fa-chevron-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
 						</div>
 
 						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -208,41 +208,41 @@
 							</div>
 
 							<div class="row" style="position: relative;top: 12px;">
-									<div class="col-3">
-											<nav aria-label="Page navigation example">
-													<ul class="pagination">
-														<li class="page-item">
-															<a class="page-link" href="#" data-path="email" onclick="reselect()">
-																<i class="fas fa-chevron-left"></i>
-																Previous
-															</a>
-														</li>
-													</ul>
-												</nav>
-									</div>
-	
-									<div class="col-6" style="text-align:center;position: relative;top: 10px;">
-										<a href="#">
-											Already have an account? Login.
-										</a>
-									</div>
-	
-									<div class="col-3">
-												<nav aria-label="Page navigation example"style="float:right;">
-													<ul class="pagination">
-														<li class="page-item ">
-															<a class="page-link" href="#" data-path="practice" onclick="reselect()">
-																Next
-																<i class="fas fa-chevron-right"></i>
-															</a>
-														</li>
-													</ul>
-												</nav>
-									</div>
+								<div class="col-3">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination">
+											<li class="page-item">
+												<a class="page-link" href="#" data-path="general" onclick="reselect()">
+													<i class="fas fa-chevron-left"></i>
+													Previous
+												</a>
+											</li>
+										</ul>
+									</nav>
 								</div>
-				
 
-				
+								<div class="col-6" style="text-align:center;position: relative;top: 10px;">
+									<a href="#">
+										Already have an account? Login.
+									</a>
+								</div>
+
+								<div class="col-3">
+									<nav aria-label="Page navigation example" style="float:right;">
+										<ul class="pagination">
+											<li class="page-item ">
+												<a class="page-link" href="#" data-path="practice" onclick="reselect()">
+													Next
+													<i class="fas fa-chevron-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+
+
 
 						</div>
 
@@ -445,32 +445,41 @@
 								</div>
 							</div>
 
-							<div style="position:relative">
+							<div class="row" style="position: relative;top: 12px;">
+								<div class="col-3">
+									<nav>
+										<ul class="pagination">
+											<li class="page-item">
+												<a class="page-link" href="#" data-path="profile" onclick="reselect()">
+													<i class="fas fa-chevron-left"></i>
+													Previous
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 
+								<div class="col-6" style="text-align:center;position: relative;top: 10px;">
+									<a href="#">
+										Already have an account? Login.
+									</a>
+								</div>
 
-								<nav aria-label="Page navigation example">
-									<ul class="pagination">
-										<li class="page-item">
-											<a class="page-link" href="#" data-path="profile" onclick="reselect()">
-												<i class="fas fa-chevron-left"></i>
-												Previous
-											</a>
-										</li>
-									</ul>
-								</nav>
-
-								<nav aria-label="Page navigation example"
-									style="float:right;position:absolute;top:0px;right:0px;">
-									<ul class="pagination">
-										<li class="page-item ">
-											<a class="page-link" href="#" data-path="terms" onclick="reselect()">
-												Next
-												<i class="fas fa-chevron-right"></i>
-											</a>
-										</li>
-									</ul>
-								</nav>
+								<div class="col-3">
+									<nav aria-label="Page navigation example" style="float:right;">
+										<ul class="pagination">
+											<li class="page-item ">
+												<a class="page-link" href="#" data-path="terms" onclick="reselect()">
+													Next
+													<i class="fas fa-chevron-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
+
+
 
 						</div>
 
@@ -1066,31 +1075,43 @@
 									<span style="color: red;">*</span>
 								</div>
 							</div>
+							<div class="row" style="position: relative;top: 12px;">
+								<div class="col-3">
 
-							<div style="position:relative">
-								<nav aria-label="Page navigation example">
-									<ul class="pagination">
-										<li class="page-item">
-											<a class="page-link" href="#" data-path="practice" onclick="reselect()">
-												<i class="fas fa-chevron-left"></i>
-												Previous
-											</a>
-										</li>
-									</ul>
-								</nav>
+									<nav aria-label="Page navigation example">
+										<ul class="pagination">
+											<li class="page-item">
+												<a class="page-link" href="#" data-path="practice" onclick="reselect()">
+													<i class="fas fa-chevron-left"></i>
+													Previous
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 
-								<nav aria-label="Page navigation example"
-									>
-									<ul class="pagination">
-										<li class="page-item ">
-											<a class="page-link" href="#" data-path="confirm" onclick="reselect()">
-												Next
-												<i class="fas fa-chevron-right"></i>
-											</a>
-										</li>
-									</ul>
-								</nav>
+								<div class="col-6" style="text-align:center;position: relative;top: 10px;">
+									<a href="#">
+										Already have an account? Login.
+									</a>
+								</div>
+
+								<div class="col-3">
+									<nav aria-label="Page navigation example" style="float:right;">
+										<ul class="pagination">
+											<li class="page-item ">
+												<a class="page-link" href="#" data-path="confirm" onclick="reselect()">
+													Next
+													<i class="fas fa-chevron-right"></i>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
+
+
+
 						</div>
 
 						<div class="tab-pane fade" id="confirm" role="tabpanel" aria-labelledby="confirm-tab">
@@ -1104,19 +1125,44 @@
 								</div>
 							</div>
 
+							<div class="row" style="position: relative;top: 12px;">
+									<div class="col-3">
+	
+										<nav aria-label="Page navigation example">
+											<ul class="pagination">
+												<li class="page-item">
+													<a class="page-link" href="#" data-path="terms" onclick="reselect()">
+														<i class="fas fa-chevron-left"></i>
+														Previous
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+	
+									<div class="col-6" style="text-align:center;position: relative;top: 10px;">
+										<a href="#">
+											Already have an account? Login.
+										</a>
+									</div>
+	
+									<div class="col-3">
+											<nav style="float:right;">
+													<ul class="pagination">
+														<li class="page-item disabled">
+															<a class="page-link" href="#" data-path="terms" onclick="reselect()">
+																Next
+																<i class="fas fa-chevron-right"></i>
 
-							<div style="position:relative">
-								<nav>
-									<ul class="pagination">
-										<li class="page-item">
-											<a class="page-link" href="#" data-path="terms" onclick="reselect()">
-												<i class="fas fa-chevron-left"></i>
-												Previous
-											</a>
-										</li>
-									</ul>
-								</nav>
-							</div>
+															</a>
+														</li>
+													</ul>
+												</nav>
+									</div>
+								</div>
+							
+
+						
 						</div>
 					</div>
 				</div>
